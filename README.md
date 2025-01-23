@@ -8,7 +8,7 @@ We choose two primes:
 
 $p = 3 \quad \text{and} \quad q = 11$
 
-### **Step 2: Calculate $\( n \)$ (the modulus)**  
+### **Step 2: Calculate $n$ (the modulus)**  
 
 $n = p \times q = 3 \times 11 = 33$
 
