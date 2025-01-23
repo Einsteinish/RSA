@@ -1,5 +1,8 @@
 # How Prime Numbers Are Used in RSA
----
+
+Prime numbers are used in RSA encryption because they enable the creation of a large modulus ($n = p \times q$)
+that is computationally infeasible to factor back into its prime components. This ensures the security of the encryption, as the difficulty of factoring large numbers underpins the system's strength.
+
 Here’s a step-by-step explanation of RSA encryption for $\( p = 3 \), \( q = 11 \)$, and the message $\( M = 5 \)$:
 
 ### **Step 1: Choose Two Prime Numbers**
