@@ -116,3 +116,20 @@ $$M = 5$$
 
 This demonstrates how RSA ensures secure encryption and decryption using prime numbers. 
 
+---
+---
+
+## How This Works in PKI  
+
+### **Key Distribution:**
+
+You publish your **public key** $(e,n) = (3, 33)$ so that anyone can send you encrypted messages.  
+Your **private key** $(d, n) = (7, 33)$ is kept secret.  
+
+### **Secure Communication:**
+A sender encrypts $M=5$ using your **public key**, producing ciphertext 
+$C=26$.  
+Only you can decrypt it using your **private key**, recovering $M=5$.    
+  
+### **Digital Signatures (Authentication):**
+You can sign messages using your **private key**, and anyone can verify the signature with your **public key**.  
