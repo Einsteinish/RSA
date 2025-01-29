@@ -123,7 +123,8 @@ This demonstrates how RSA ensures secure encryption and decryption using prime n
 
 ### **Key Distribution:**
 
-You **publish** your **public key** $(e,n) = (3, 33)$ so that **anyone** can send you encrypted messages.  
+You publish your **public key** $(e,n) = (3, 33)$ so that anyone can send you encrypted messages.  Note that when sending a public key in RSA, you typically send the two numbers 
+$e$ (the public exponent) and $n$ (the modulus), so the public key would be represented as a pair $(e,n)$.    
 Your **private key** $(d, n) = (7, 33)$ is kept secret.  
 
 ### **Secure Communication:**
