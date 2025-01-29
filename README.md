@@ -4,25 +4,25 @@ Prime numbers are used in RSA (Rivest–Shamir–Adleman) encryption, a cornerst
 
 Here’s a step-by-step explanation of RSA encryption for $\( p = 3 \), \( q = 11 \)$, and the message $\( M = 5 \)$:
 
-### **Step 1: Choose Two Prime Numbers**
+### Step 1: Choose Two Prime Numbers
 
 We choose two primes:  
 
 $p = 3 \quad \text{and} \quad q = 11$
 
-### **Step 2: Calculate $n$ (the modulus)**  
+### Step 2: Calculate $n$ (the modulus) 
 
 $n = p \times q = 3 \times 11 = 33$
 
 This $n$ will be part of both the public and private keys.
 
-### **Step 3: Calculate $\phi(n)$ (Euler’s Totient Function)**  
+### Step 3: Calculate $\phi(n)$ (Euler’s Totient Function)
 
 $\phi(n) = (p - 1) \times (q - 1)$
 
 $\phi(n) = (3 - 1) \times (11 - 1) = 2 \times 10 = 20$
 
-### **Step 4: Choose the Public Exponent $e$ which must be relatively prime to $\phi(n)$ **  
+### Step 4: Choose the Public Exponent $e$ which must be relatively prime to $\phi(n)$  
 
 Choose an $e$ such that:
 1. $1 < e < \phi(n)$  
@@ -47,7 +47,7 @@ Let’s select $e = 3$, which satisfies these conditions.
 This means their greatest common divisor (GCD) is 1.
 
 
-### **Step 5: Calculate the Private Key $d$**  
+### Step 5: Calculate the Private Key $d$  
 The private key $d$ is the modular multiplicative inverse of $e$ modulo $\phi(n)$, meaning:  
  
 $$e \times d \equiv 1 \ (\text{mod} \ \phi(n))$$
@@ -66,7 +66,7 @@ Now we have:
 - **Public Key**: $(e, n) = (3, 33)$
 - **Private Key**: $(d, n) = (7, 33)$
 
-### **Step 6: Encrypt the Message $M = 5$**  
+### Step 6: Encrypt the Message $M = 5$  
 The encryption formula is:
  
 $$C = M^e \ (\text{mod} \ n)$$
@@ -88,7 +88,7 @@ So, the encrypted message is:
  
    $$C = 26$$   
 
-### **Step 7: Decrypt the Ciphertext $C = 26$**  
+### Step 7: Decrypt the Ciphertext $C = 26$ 
 The decryption formula is:
 
 $$M = C^d \ (\text{mod} \ n)$$
@@ -109,7 +109,7 @@ Thus, the decrypted message is:
 
 $$M = 5$$
 
-### **Final Result**
+### Final Result
 - **Original Message**: $M = 5$  
 - **Encrypted Message**: $C = 26$  
 - **Decrypted Message**: $M = 5$
