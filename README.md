@@ -22,8 +22,8 @@ $\phi(n) = (p - 1) \times (q - 1)$
 
 $\phi(n) = (3 - 1) \times (11 - 1) = 2 \times 10 = 20$
 
-### **Step 4: Choose the Public Exponent $e$ (must be relatively prime to $\phi(n)$)
-**  
+### **Step 4: Choose the Public Exponent $e$ which must be relatively prime to $\phi(n)$ **  
+
 Choose an $e$ such that:
 1. $1 < e < \phi(n)$  
 2. $\text{gcd}(e, \phi(n)) = 1$ (relatively prime to $\phi(n)$, meaning $e$ and $\phi(n)$ have no common factors other than $1$).
