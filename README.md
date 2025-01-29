@@ -39,8 +39,12 @@ Start testing small integers for $e$:
 - $e =  3$:
   
    $gcd(3,20)=1$ (relatively prime, so valid).
-  
+
 Let’s select $e = 3$, which satisfies these conditions.
+
+(Note) Two numbers are relatively prime (also called coprime) if they share no common factors other than 1. 
+This means their greatest common divisor (GCD) is 1.
+
 
 ### **Step 5: Calculate the Private Key $d$**  
 The private key $d$ is the modular multiplicative inverse of $e$ modulo $\phi(n)$, meaning:  
