@@ -10,13 +10,15 @@ We choose two primes:
 
 $p = 3 \quad \text{and} \quad q = 11$
 
-### Step 2: Calculate $n$ (the modulus) 
+### Step 2: Calculate $n$ (the modulus)  
 
 $n = p \times q = 3 \times 11 = 33$
 
 This $n$ will be part of both the public and private keys.
 
-### Step 3: Calculate $\phi(n)$ (Euler’s Totient Function)
+### Step 3: Calculate $\phi(n)$ (Euler’s Totient Function)  
+
+Once $p$ and $q$ are chosen, the next step is to compute the totient function $\phi(n) = (p-1)(q-1)$. This function plays a key role in the generation of the private key. While $p$ and $q$ are used to derive $n$, it is $\phi(n)$ that determines the private key $d$ by finding the modular inverse of the public key exponent $e$. This step ensures that the private key is mathematically linked to the public key
 
 $\phi(n) = (p - 1) \times (q - 1)$
 
