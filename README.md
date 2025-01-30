@@ -45,7 +45,7 @@ Start testing small integers for $e$:
 
 Let’s select $e = 3$, which satisfies these conditions.  
 
-The public key would be represented as a pair:
+The **public key** would be represented as a pair:
 
 $$(e,n) = (3,33)$$  
 
