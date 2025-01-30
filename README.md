@@ -205,5 +205,7 @@ The security of RSA depends entirely on the difficulty of factoring the modulus 
 ![Prime Number Sizes for Different Bit Lengths](images/Table-Prime-Number-Sizes-for-Different-Bit-Lengths.png)  
 
 ---
-# Largest Known Prime Number (Mersenne Prime). Discovered in December 2024.
+# Largest Known Prime Number (Mersenne Prime)  
 ![Largest Known Prime Number](images/Table-Largest-Known-Prime.png)  
+  
+As of December 2024, the largest known prime is a Mersenne prime, discovered on December 12, 2024, through the Great Internet Mersenne Prime Search (GIMPS). This prime, $2^136,279,841 – 1$, has an astonishing $41,024,320$ digits.
