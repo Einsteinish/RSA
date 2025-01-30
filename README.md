@@ -190,16 +190,20 @@ By using very large primes (often 2048 bits or more), RSA provides a security ma
 
 
 ---
-# The Challenge of Prime Number Generation
+# The Challenge of Prime Number Generation  
 One of the challenges in RSA is the generation of large prime numbers. Although there are efficient probabilistic primality tests (such as the Miller-Rabin test), generating large primes that meet the security requirements can still be computationally intensive. The primes must be large enough to make factoring the modulus $n$ infeasible, but not so large that generating them becomes impractical.  
 
 In practice, the generation of prime numbers for RSA often involves using specialized algorithms that generate random numbers and test their primality. If a number passes the primality test, it can be used in RSA key generation. However, care must be taken to ensure that the primes are not too close to each other, as this could make the factorization of $n$ easier.  
 
 
 ---
-# Prime Numbers and RSA Security
+# Prime Numbers and RSA Security  
 The security of RSA depends entirely on the difficulty of factoring the modulus $n$. This difficulty arises because, once $p$ and $q$ are selected, there are no shortcuts to factoring their product. The relationship between the modulus $n$ and the totient $\phi(n)$ is hidden behind the secrecy of the prime numbers used to generate them.  
 
 ---
 # Prime Numbers in RSA (2048 bits) are Huge!  
-![Prime Number Sizes for Different Bit Lengths](images/Table-Prime-Number-Sizes-for-Different-Bit-Lengths.png)
+![Prime Number Sizes for Different Bit Lengths](images/Table-Prime-Number-Sizes-for-Different-Bit-Lengths.png)  
+
+---
+# Largest Known Prime Number (Mersenne Prime). Discovered in December 2024.
+![Largest Known Prime Number](images/Table-Largest-Known-Prime.png)  
