@@ -41,11 +41,14 @@ Start testing small integers for $e$:
   
    $gcd(3,20)=1$ (relatively prime, so valid).
 
-Let’s select $e = 3$, which satisfies these conditions.
+Let’s select $e = 3$, which satisfies these conditions.  
+
+The public key would be represented as a pair:
+
+$$(e,n) = (3,33)$$  
 
 (Note) Two numbers are relatively prime (also called coprime) if they share no common factors other than 1. 
-This means their greatest common divisor (GCD) is 1.
-
+This means their greatest common divisor (GCD) is 1.  
 
 ### Step 5: Calculate the Private Key $d$  
 The private key $d$ is the modular multiplicative inverse of $e$ modulo $\phi(n)$, meaning:  
@@ -117,30 +120,32 @@ $$M = 5$$
 This demonstrates how RSA ensures secure encryption and decryption using prime numbers. 
 
 ---
----
 
 ## How This Works in PKI  
 
 ### **Key Distribution:**
-
 You publish your **public key** $(e,n) = (3, 33)$ so that anyone can send you encrypted messages. When sending a public key in RSA, you typically send the two numbers 
-$e$ (the public exponent) and $n$ (the modulus), so the public key would be represented as a pair $(e,n)$.    
-Your **private key** $(d, n) = (7, 33)$ is kept secret.  
+$e$ (the public exponent) and $n$ (the modulus), so the public key would be represented as a pair $(e,n)$:
 
+$$(e,n) = (3,33)$$
+
+Your **private key** $(d, n) = (7, 33)$ is kept secret.  
 **(Note 1)**  
 However, the numbers $e=3$ and $n=33$ are very small and not secure for real-world RSA encryption. These numbers are simply for illustration, and actual RSA keys used for secure communication have much larger values (typically hundreds of bits long for both $e$ and $n$).
 In practice, $n$ is usually the product of two large prime numbers $p$ and $q$, and $e$ is a smaller number, often $65537$, but it can be any number that is coprime with $(p - 1)(q - 1)$.  
-
 **(Note 2: More realistic example)**  
 $e=65537$ (common choice for the public exponent)  
 $n=3233$ (product of two prime numbers, 61 and 53, for example)  
+So, the **public key** would be something like:
+
+$$(e,n) = (65537,3233)$$
+
 
 ### **Secure Communication:**
-
-A sender encrypts $M=5$ using your **public key**, producing ciphertext 
+A sender **encrypts** $M=5$ using your **public key**, producing ciphertext 
 $C=26$.  
-Only **you** can decrypt it using your **private key**, recovering $M=5$.    
+Only **you** can **decrypt** it using your **private key**, recovering $M=5$.    
   
 ### **Digital Signatures (Authentication):**
-
 You can **sign** messages using your **private key**, and anyone can **verify** the signature with your **public key**.  
+
