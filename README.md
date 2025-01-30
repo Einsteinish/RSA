@@ -71,7 +71,7 @@ Now we have:
 - **Public Key**: $(e, n) = (3, 33)$
 - **Private Key**: $(d, n) = (7, 33)$
 
-### Step 6: Encrypt the Message $M = 5$ using public key $(e, n) = (3, 33)$
+### Step 6: Encrypt the Message $M = 5$ using public key, $(e, n) = (3, 33)$  
 The encryption formula is:
  
 $$C = M^e \ (\text{mod} \ n)$$
@@ -93,7 +93,7 @@ So, the encrypted message is:
  
    $$C = 26$$   
 
-### Step 7: Decrypt the Ciphertext $C = 26$ 
+### Step 7: Decrypt the Ciphertext $C = 26$ using private key, $(d, n) = (7, 33)$  
 The decryption formula is:
 
 $$M = C^d \ (\text{mod} \ n)$$
