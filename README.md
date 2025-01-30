@@ -200,4 +200,6 @@ In practice, the generation of prime numbers for RSA often involves using specia
 # Prime Numbers and RSA Security
 The security of RSA depends entirely on the difficulty of factoring the modulus $n$. This difficulty arises because, once $p$ and $q$ are selected, there are no shortcuts to factoring their product. The relationship between the modulus $n$ and the totient $\phi(n)$ is hidden behind the secrecy of the prime numbers used to generate them.  
 
-
+---
+# Prime Numbers in RSA (2048 bits) are Huge!  
+![Prime Number Sizes for Different Bit Lengths](images/Table-Prime-Number-Sizes-for-Different-Bit-Lengths.png)
